@@ -1,0 +1,19 @@
+{
+    "name": "bmehler/hello-world-bundle",
+    "type": "symfony-bundle",
+    "description": "First hello world Symfony Bundle",
+    "version": "1.0.0",
+    "keywords": [
+        "php",
+        "symfony",
+        "reusable bundle",
+        "tutorial"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bernhard Mehler",
+            "email": "bernhard.mehler@gmail.com"
+        }
+    ]
+}
