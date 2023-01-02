@@ -20,11 +20,5 @@
         "psr-4": {
             "Bmehler\\HelloWorldBundle\\": "src/"
         }
-    },
-    "require-dev": {
-        "symfony/http-kernel": "^4.0"
-    },
-    "require": {
-        "symfony/dependency-injection": "^4.0"
     }
 }
