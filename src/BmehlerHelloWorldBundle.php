@@ -2,12 +2,13 @@
 
 namespace Bmehler\HelloWorldBundle;
 
+use Bmehler\HelloWorldBundle\DependencyInjection\BmehlerHelloWorldExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class BmehlerHelloWorldBundle extends Bundle
 {
-     function __construct() {
-        $text = "Hello, Jeny!";
-        print $text;
+    public function getContainerExtension(): BmehlerHelloWorldExtension
+    {
+        return new BmehlerHelloWorldExtension();
     }
 }
