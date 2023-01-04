@@ -1,3 +1,0 @@
-bmehler_hello_world_bundle:
-    path: /hello
-    controller: Bmehler\HelloWorldBundle\Controller\BundleController::index
