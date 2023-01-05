@@ -18,9 +18,16 @@ To install the composer package do
 composer require bmehler/hello-world-bundle
 ```
 
-Then just add this to config/routes.yaml
+Add this to config/routes.yaml
 
 ```php
 app_bundle:
     resource: '@BmehlerHelloWorldBundle/Resources/config/routes.xml'
 ```
+
+The bundles route is /hello.
+```php
+<your virutalhost>/hello
+```
+
+That`s it!
