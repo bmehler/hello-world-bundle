@@ -1,6 +1,0 @@
-services:
-    Bmehler\HelloWorldBundle\Controller\BundleController:
-        calls:
-            - method: index
-              arguments:
-                  - '@service_container'

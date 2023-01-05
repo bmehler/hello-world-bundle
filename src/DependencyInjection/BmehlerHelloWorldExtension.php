@@ -4,17 +4,17 @@ namespace Bmehler\HelloWorldBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\Config\FileLocator;
 
 class BmehlerHelloWorldExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
-       $loader = new YamlFileLoader(
+       $loader = new XmlFileLoader(
         $container,
         new FileLocator(__DIR__.'/../Resources/config')
        );
-       $loader->load('services.yaml');
+       $loader->load('services.xml');
     }
 }

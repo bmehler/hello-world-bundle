@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:hello_world="http://acme_company.com/schema/dic/hello_world"
+    xsi:schemaLocation="http://acme_company.com/schema/dic/hello_world
+        http://acme_company.com/schema/dic/hello_world/hello_world-1.0.xsd">
+    <services>
+        <service id="Bmehler\HelloWorldBundle\Controller\BundleController" public="true" autowire="true" autoconfigure="true">
+            <call method="index">
+                <argument type="service" id="service_container"/>
+            </call>
+        </service>
+    </services>
+</container>

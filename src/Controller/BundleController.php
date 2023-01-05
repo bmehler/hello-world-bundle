@@ -14,7 +14,7 @@ class BundleController extends AbstractController {
     {
         $number = random_int(0, 100);
 
-        $loader = new FilesystemLoader(__DIR__.'/../templates/views');
+        $loader = new FilesystemLoader(__DIR__.'/../Resources/views');
         $twig = new Environment($loader);
 
         return new Response(
